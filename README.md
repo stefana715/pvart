@@ -1,97 +1,89 @@
-# PVART
+# pvart — Photovoltaic Art: Image-Derived Descriptors for Coloured PV Facades
 
-## Project focus
-This repository develops a paper project at the intersection of:
-- photovoltaics
-- architecture
-- coloured / aesthetic BIPV
-- public art
-- urban installation design
+> **Paper:** *From visual pattern to electrical performance: image-derived descriptors and experimental validation for coloured photovoltaic facades*
 
-The current goal is to evaluate whether the topic can be developed into:
-1. an SCI paper, or
-2. a Chinese core-journal paper.
+## Repository Structure
 
----
-
-## Current judgment
-Based on the current materials, the most promising direction is **not** a pure engineering performance paper. The stronger route is an **interdisciplinary review / framework paper** on PV as an architectural and artistic medium.
-
-That means the project should move beyond inspirational examples and build a structured academic contribution.
-
----
-
-## Recommended paper routes
-
-### Route A — SCI review / framework paper
-**Working direction:**
-"From Building-Integrated Photovoltaics to Public Solar Art: A review and multidimensional assessment framework for energy-aesthetic integration"
-
-**Why this is promising:**
-- the uploaded material already contains multiple visual and case-study references
-- coloured PV and aesthetic BIPV are active topics
-- the art / public-space dimension is less systematically synthesised in the literature
-- a review + framework route does not require lab experiments at the first stage
-
-**What this route needs:**
-- a systematic literature matrix
-- a structured case database
-- a clear taxonomy
-- an original evaluation framework
-
-### Route B — SCI empirical paper
-This is possible only if later we add one or more of the following:
-- measured performance data
-- simulation / LCA / techno-economic comparison
-- public perception survey
-- expert scoring / Delphi / AHP / SEM or similar
-
-Without that, a strong SCI engineering paper will be difficult.
-
-### Route C — Chinese core-journal paper
-A safe fallback is a theory + case-based paper on PV-art integration, architectural expression, and design strategy.
-
-This is realistic even if the material remains mainly conceptual and visual.
-
----
-
-## Initial research questions
-1. How can photovoltaics evolve from energy devices into architectural and artistic media?
-2. What design strategies reconcile energy generation and aesthetic quality?
-3. What dimensions are missing in current BIPV evaluation beyond efficiency and cost?
-4. Can PV-art cases be assessed through a reproducible multidimensional framework?
-
----
-
-## Repository structure
-```text
+```
 pvart/
-├── README.md
-├── docs/
-│   ├── project_brief.md
-│   ├── journal_routes.md
-│   ├── review_outline.md
-│   └── case_extraction_template.md
 ├── data/
-│   ├── raw_cases/
-│   ├── extracted_case_table.csv
-│   └── literature_matrix.csv
-├── figure/
-├── code/
-└── paper/
+│   ├── raw_measurements/           # Electrical test data (CSV)
+│   │   ├── lab_scale_SERIS.csv          # SERIS lab-scale I-V data (M-1 to M-9)
+│   │   ├── product_scale_CetisPV.csv    # CetisPV product-scale data (EG-PF1~4)
+│   │   ├── product_scale_fullsize.csv   # Full-size module comparison w/ SERIS
+│   │   └── module_specifications.csv    # Module construction specs
+│   │
+│   ├── pattern_images/             # Dot pattern images for descriptor extraction
+│   │   ├── algorithm_steps/             # Algorithm workflow images
+│   │   ├── lab_scale/                   # Lab-scale module I-V curves
+│   │   └── product_scale/               # Product-scale panel photos
+│   │
+│   ├── pv_art_cases/               # Global PV Art case study images
+│   │
+│   └── extracted_descriptors/      # Computed image descriptors (CSV)
+│       ├── image_descriptors.csv        # CCR, EAR, SF, ED, DSV, PUI per pattern
+│       ├── shading_coefficients.csv     # Effective shading coefficient α
+│       └── loss_decomposition.csv       # Isc/Voc/FF loss breakdown
+│
+├── scripts/
+│   ├── 01_performance_analysis.py       # Data analysis & figure generation
+│   └── 02_extract_image_descriptors.py  # OpenCV descriptor extraction tool
+│
+├── figures/                        # Publication-ready figures (PNG + PDF)
+│
+└── docs/
+    └── PV_Art_Paper_Draft.docx     # Paper manuscript draft
 ```
 
----
+## Image-Derived Descriptors
 
-## Immediate next steps
-1. unpack and read the uploaded PPT / PDF / case materials
-2. extract all identifiable projects into a table
-3. build a literature matrix around PV-art, coloured BIPV, aesthetic PV, and public solar installations
-4. identify the publishable research gap
-5. decide SCI route versus Chinese core route
+| Descriptor | Symbol | Definition |
+|---|---|---|
+| Color Coverage Ratio | CCR | Fraction of module area covered by printed dots (%) |
+| Effective Aperture Ratio | EAR | Transparent fraction = 100 − CCR (%) |
+| Spatial Frequency | SF | Number of dots per unit area (dots/Mpx) |
+| Edge Density | ED | Total dot perimeter per unit area (perimeter/kpx) |
+| Dot Size Variance | DSV | Coefficient of variation of dot equivalent diameters |
+| Pattern Uniformity Index | PUI | CV of cell-level coverage (%; lower = more uniform = less hotspot risk) |
 
----
+## Key Findings
 
-## Current recommendation
-Start with an SCI-oriented review/framework workflow.
-If the evidence depth or methodological novelty turns out to be insufficient, convert the same material into a stronger Chinese core-journal article.
+- **CCR → efficiency**: linear model η = −0.150 × CCR + 16.91, R² = 0.996
+- **Same CCR, different patterns**: 5.5 pp spread in efficiency loss at identical 26.48% coverage → pattern geometry (SF, ED) is a secondary predictor
+- **Effective shading coefficient**: dot patterns α = 0.796 ± 0.085 vs full print α = 0.886
+- **vs SERIS Multi-color PV**: proposed modules achieve 27.6% relative loss vs 43% (benchmark)
+- **Annual yield (Singapore, 55°C)**: EG-PF2 produces 325 kWh vs SERIS 243 kWh (+34%)
+
+## Usage
+
+```bash
+# Extract descriptors from a dot pattern image
+python scripts/02_extract_image_descriptors.py \
+    --input data/pattern_images/algorithm_steps/step5_energy_oriented.jpg \
+    --split 3 \
+    --output data/extracted_descriptors/result.json
+
+# Run full performance analysis and generate figures
+python scripts/01_performance_analysis.py
+```
+
+## Requirements
+
+```
+numpy
+matplotlib
+opencv-python-headless
+scikit-image
+```
+
+## Patent
+
+The dot-matrix vector pattern design method is covered by pending patents:
+- CN 2025103536061 (filed 2025-03-24)
+- SG 10202500754Y (filed 2025-03-24)
+- Applicant: Power Facade Pte. Ltd.
+
+## License
+
+Data and images: © Power Facade Pte. Ltd. All rights reserved.  
+Analysis scripts: MIT License.

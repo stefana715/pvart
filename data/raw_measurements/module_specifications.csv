@@ -1,0 +1,19 @@
+Parameter,Value,Unit
+Module_dimensions,1750x1150,mm
+Module_area,2.0125,m2
+Glass_front,5mm tempered colored glass,
+Glass_rear,5mm laminated transparent glass,
+Encapsulant,PVB,
+Cell_technology,P-TopCon monocrystalline bifacial,
+Cell_dimensions,182x182,mm
+Cell_thickness,150±15,um
+Busbars,16,count
+Front_finger_lines,156,count
+Rear_finger_lines,300,count
+Busbar_width,1.2/0.8,mm
+Busbar_spacing,10.8,mm
+Cell_efficiency_max,25.2-25.3,%
+Cell_power_max,8.32,W
+Structure,Tempered Glass/PVB/Cell/PVB/Tempered Glass,
+Frame,Frameless,
+Junction_box,2x JBOX 1x bypass diode,

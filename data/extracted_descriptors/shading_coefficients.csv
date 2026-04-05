@@ -1,0 +1,10 @@
+Module,Color_Coverage_pct,Isc_A,Baseline_Isc_A,Effective_Shading_Coefficient_alpha,Method
+M-1,26.48,6.61,8.05,0.676,Dot pattern
+M-2,26.48,6.14,8.05,0.896,Dot pattern
+M-3,18.66,6.96,8.05,0.726,Dot pattern
+M-4,26.48,6.30,8.05,0.821,Dot pattern
+M-6,26.48,6.12,8.05,0.905,Dot pattern
+M-9,26.48,6.44,8.05,0.755,Dot pattern
+M-5C,26.48,5.73,8.05,1.088,Colored glass
+M-7,100.00,0.92,8.05,0.886,Full print
+M-8,61.51,3.37,8.05,0.945,Large dots

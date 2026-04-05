@@ -1,0 +1,7 @@
+Pattern_Name,Dot_Size_Mode,CCR_pct,EAR_pct,N_Dots,Mean_Dot_Diameter_px,Std_Dot_Diameter_px,DSV_CoV,Spatial_Frequency_per_Mpx,Circularity,PUI_pct,Edge_Density_per_kpx
+Pattern1_Heritage,Energy_Oriented,14.6,85.4,1032,11.0,5.8,0.528,1210,1.059,28.7,42.31
+Pattern2_Modern,Energy_Oriented,6.2,93.8,1211,5.6,5.0,0.887,1420,1.310,44.0,25.50
+Pattern3_Nature,Energy_Oriented,13.3,86.7,3595,5.3,3.6,0.672,4212,1.340,33.3,65.18
+Pattern1_Heritage,Graphic_Oriented,31.3,68.7,905,17.1,9.1,0.534,1059,0.981,25.7,63.24
+Pattern2_Modern,Graphic_Oriented,13.1,86.9,1185,9.7,5.1,0.525,1387,1.098,21.5,44.58
+Pattern3_Nature,Graphic_Oriented,38.9,61.1,1673,11.9,10.5,0.881,1956,0.998,9.8,109.58
