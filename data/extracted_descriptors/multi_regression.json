@@ -1,0 +1,12 @@
+{
+  "same_ccr_spread_pp": 5.47,
+  "pearson_correlations": {
+    "CCR_pct": 0.795,
+    "Spatial_Frequency_per_Mpx": 0.824,
+    "Edge_Density_per_kpx": 0.995,
+    "DSV_CoV": -0.608,
+    "PUI_pct": -0.693,
+    "Mean_Dot_Diameter_px": -0.03
+  },
+  "note": "Only 3 primary data points; correlations are indicative. Strength comes from the qualitative monotonic relationship and the physical interpretation (edge diffraction)."
+}
