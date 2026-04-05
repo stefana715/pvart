@@ -1,0 +1,7 @@
+{
+  "model": "Isc = Isc_baseline \u00d7 (1 - \u03b1 \u00d7 CCR/100)",
+  "Isc_baseline_A": 8.05,
+  "alpha_dot_mean": 0.796,
+  "alpha_dot_std": 0.093,
+  "interpretation": "Each dot blocks ~80% of light in its area; ~20% reaches cells via edge diffraction/scattering"
+}
