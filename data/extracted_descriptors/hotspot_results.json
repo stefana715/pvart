@@ -1,0 +1,28 @@
+{
+  "algorithm": {
+    "mismatch_mean": 1.004,
+    "mismatch_95ci": [
+      0.835,
+      1.182
+    ],
+    "max_reverse_W_mean": 0.0,
+    "hotspot_probability": 0.0,
+    "hotspot_cells_mean": 0.0,
+    "Imin_mean": 6.195,
+    "Imax_mean": 6.495,
+    "current_spread_mean": 0.299
+  },
+  "fullprint": {
+    "mismatch_mean": 12.197,
+    "mismatch_95ci": [
+      10.238,
+      14.22
+    ],
+    "max_reverse_W_mean": 0.0,
+    "hotspot_probability": 0.0,
+    "hotspot_cells_mean": 0.0,
+    "Imin_mean": 4.301,
+    "Imax_mean": 7.593,
+    "current_spread_mean": 3.292
+  }
+}
