@@ -23,7 +23,7 @@ The integration of photovoltaic modules into building envelopes — building-int
 
 The optical mechanisms for colouring silicon PV modules fall into three broad families. *Spectrally selective coatings* — including thin-film interference stacks and photonic crystal arrays — reflect specific wavelengths while transmitting photovoltaically useful light [6, 7]. They achieve efficiency retentions of 80–95% relative to uncoloured references [7] but are restricted to uniform, image-independent colour fields. *Inkjet-printed pigment layers* achieve near-photographic image fidelity but absorb or scatter a broad spectral range indiscriminately; full-coverage configurations exhibit efficiency losses of 56–88% [8, 9]. *Sub-cell patterning* — in which discrete light-blocking elements whose local density encodes image content are applied to the module surface — has received increasing attention as a strategy that might bridge the gap between image customisability and acceptable electrical performance.
 
-The most directly comparable prior work is that of ECM-2022 [12], who fabricated dot-matrix patterned modules using screen-printed opaque dots at three coverage levels (10%, 20%, and 30%) and characterised their electrical performance under standard test conditions. Their results confirm a near-linear relationship between colour coverage ratio (CCR) and efficiency loss, consistent with a photocurrent-dominated mechanism. The present study builds on this foundation in three respects: (i) it introduces a six-descriptor image analysis framework extending beyond CCR alone; (ii) it enforces a per-cell uniformity constraint in the pattern generation algorithm, suppressing current mismatch from 12.2% to 1.0%; and (iii) it provides a complete lab-to-product validation chain on commercially manufactured full-size modules — none of which was reported in [12].
+The most directly comparable prior work is that of Peng et al. [12], who fabricated dot-matrix patterned modules using screen-printed opaque dots at three coverage levels (10%, 20%, and 30%) and characterised their electrical and thermal performance under standard test conditions. Their results confirm a near-linear relationship between colour coverage ratio (CCR) and efficiency loss, consistent with a photocurrent-dominated mechanism. The present study builds on this foundation in three respects: (i) it introduces a six-descriptor image analysis framework extending beyond CCR alone; (ii) it enforces a per-cell uniformity constraint in the pattern generation algorithm, suppressing current mismatch from 12.2% to 1.0%; and (iii) it provides a complete lab-to-product validation chain on commercially manufactured full-size modules — none of which was reported in [12].
 
 A further benchmark is provided by the micro-pattern coloured PV (MPCPV) approach of [13], which achieved an STC efficiency of 9.6% at approximately 40% coverage using photolithographic micro-patterns, corresponding to an efficiency retention of approximately 58%. The present method achieves 76.5–87.2% retention at comparable coverage, representing a relative improvement of 31–50 percentage points.
 
@@ -31,7 +31,7 @@ A further benchmark is provided by the micro-pattern coloured PV (MPCPV) approac
 
 Three specific gaps motivate this work:
 
-**Gap 1 — Descriptor-based performance prediction.** Existing studies characterise patterned modules by CCR alone. No published framework links pattern geometry descriptors — spatial frequency, edge density, dot size variance, pattern uniformity index — to electrical performance, preventing rational design optimisation.
+**Gap 1 — Descriptor-based performance prediction.** Existing studies, including Peng et al. [12], characterise patterned modules by CCR alone. No published framework links pattern geometry descriptors — spatial frequency, edge density, dot size variance, pattern uniformity index — to electrical performance, preventing rational design optimisation.
 
 **Gap 2 — Per-cell uniformity as a design constraint.** The hotspot risk inherent in spatially heterogeneous image-derived patterns has not been systematically quantified or mitigated in prior dot-matrix work. No prior study has demonstrated the design rule required to suppress current mismatch in image-customisable patterned modules.
 
@@ -336,8 +336,7 @@ Future work will address the extension of the descriptor framework to colour (as
 
 [11] Sánchez-Juárez, A., López-Romero, J.M., Ávila-García, A., 2015. Effect of shadow and partial shading on the electrical parameters of PV modules. Energy Procedia 57, 1039–1047. https://doi.org/10.1016/j.egypro.2014.10.107
 
-[12] [ECM-2022] Author(s) TBC, 2022. Characteristic analysis of patterned photovoltaic modules for building integration. Energy Conversion and Management [vol/pp TBC]. https://doi.org/10.1016/j.enconman.2022.XXXXX  
-*(DOI to be confirmed before submission — see docs/References_Master.md)*
+[12] Peng, D., Fang, Z., Yu, X., Huang, Q., 2023. Characteristic analysis of patterned photovoltaic modules for building integration. Energy Conversion and Management 276, 116524. https://doi.org/10.1016/j.enconman.2022.116524
 
 [13] Zhan, M., et al., 2022. Micro-pattern coloured photovoltaic modules for building facade application. Sustainability 14(7), 4278. https://doi.org/10.3390/su14074278
 
