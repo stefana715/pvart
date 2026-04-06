@@ -189,8 +189,7 @@ coloured BIPV practice, and Section 7 concludes.
 [11] Sánchez-Juárez, A., López-Romero, J.M., Ávila-García, A., 2015. Effect of shadow and partial shading on the electrical parameters of PV modules. Energy Procedia 57, 1039–1047.
 
 [12] **[ECM-2022]** — *Citation to be completed with full bibliographic data once DOI is confirmed:*  
-Author(s), 2022. Characteristic analysis of patterned photovoltaic modules for building integration. Energy Conversion and Management [volume/issue/pages]. https://doi.org/10.1016/j.enconman.2022.XXXXX  
-*(Note to author: confirm DOI and page numbers before submission; use this label as [12] throughout)*
+Peng, D., Fang, Z., Yu, X., Huang, Q., 2023. Characteristic analysis of patterned photovoltaic modules for building integration. Energy Conversion and Management 275, 116479. https://doi.org/10.1016/j.enconman.2022.116479
 
 [13] **[MPCPV-2022]** — Zhan, M., et al., 2022. Micro-pattern coloured photovoltaic modules for building facade application. Sustainability 14(7), 4278. https://doi.org/10.3390/su14074278
 

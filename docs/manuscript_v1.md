@@ -336,7 +336,7 @@ Future work will address the extension of the descriptor framework to colour (as
 
 [11] Sánchez-Juárez, A., López-Romero, J.M., Ávila-García, A., 2015. Effect of shadow and partial shading on the electrical parameters of PV modules. Energy Procedia 57, 1039–1047. https://doi.org/10.1016/j.egypro.2014.10.107
 
-[12] Peng, D., Fang, Z., Yu, X., Huang, Q., 2023. Characteristic analysis of patterned photovoltaic modules for building integration. Energy Conversion and Management 276, 116524. https://doi.org/10.1016/j.enconman.2022.116524
+[12] Peng, D., Fang, Z., Yu, X., Huang, Q., 2023. Characteristic analysis of patterned photovoltaic modules for building integration. Energy Conversion and Management 275, 116479. https://doi.org/10.1016/j.enconman.2022.116479
 
 [13] Zhan, M., et al., 2022. Micro-pattern coloured photovoltaic modules for building facade application. Sustainability 14(7), 4278. https://doi.org/10.3390/su14074278
 

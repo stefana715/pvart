@@ -18,7 +18,7 @@
 | 9 | Reyes-Figueroa2022 | Energies | 2022 | 10.3390/en15228470 | ✅ |
 | 10 | Brecl2011 | Renew. Energy | 2011 | 10.1016/j.renene.2011.04.038 | ✅ |
 | 11 | SanchezJuarez2015 | Energy Procedia | 2015 | 10.1016/j.egypro.2014.10.107 | ✅ |
-| **12** | **ECM-2022** | **Energy Convers. Manag.** | **2023** | **10.1016/j.enconman.2022.116524** | **✅** |
+| **12** | **ECM-2022** | **Energy Convers. Manag.** | **2023** | **10.1016/j.enconman.2022.116479** | **✅** |
 | **13** | **MPCPV-2022** | **Sustainability** | **2022** | **10.3390/su14074278** | **✅** |
 | 14 | OpenCV-2024 | Software | 2024 | opencv.org v4.x | ✅ |
 | 15 | ISO-IEC-BIPM | Standard | 2008 | Guide to Uncertainty (GUM) | ✅ |
@@ -28,14 +28,14 @@
 ## Paper [12] — ECM-2022 ✅ CONFIRMED
 
 **Full citation:**  
-Peng, D., Fang, Z., Yu, X., Huang, Q., 2023. Characteristic analysis of patterned photovoltaic modules for building integration. *Energy Conversion and Management* 276, 116524.  
-https://doi.org/10.1016/j.enconman.2022.116524
+Peng, D., Fang, Z., Yu, X., Huang, Q., 2023. Characteristic analysis of patterned photovoltaic modules for building integration. *Energy Conversion and Management* 275, 116479.  
+https://doi.org/10.1016/j.enconman.2022.116479
 
 **Authors:** Dingkun Peng, Zhenlei Fang, Xufeng Yu, Qunwu Huang  
 **Journal:** Energy Conversion and Management  
-**Volume:** 276 | **Article no.:** 116524  
+**Volume:** 275 | **Article no.:** 116479  
 **Published online:** December 2022 (volume issue 2023)  
-**DOI:** 10.1016/j.enconman.2022.116524 ✅  
+**DOI:** 10.1016/j.enconman.2022.116479 ✅  
 **PII:** S0196890422013024  
 
 **Why cited:**
@@ -84,7 +84,7 @@ https://doi.org/10.1016/j.enconman.2022.116524
 
 ## Action items before submission
 
-- [x] ~~**[URGENT]** Confirm ECM-2022 DOI~~ → **DONE**: 10.1016/j.enconman.2022.116524 (Peng et al., ECM vol.276, 2023)
+- [x] ~~**[URGENT]** Confirm ECM-2022 DOI~~ → **DONE**: 10.1016/j.enconman.2022.116479 (Peng et al., ECM vol.275, 2023)
 - [ ] Verify MPCPV-2022 exact title via doi.org/10.3390/su14074278
 - [ ] Decide on SERIS data citation strategy (unpublished data note vs. omit)
 - [ ] Check Reiter2022 (Prog. Photovolt.) is correct DOI — may be pip.3529 or later
