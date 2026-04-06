@@ -58,19 +58,7 @@ and experimental validation for coloured photovoltaic facades"
 - 生成 Figure: Isc vs CCR with α model lines
 - 生成 Figure: α vs pattern descriptors
 
-### Section 5.5: Temperature-dependent energy yield
-需要新脚本：`scripts/07_energy_yield_simulation.py`
-
-任务：
-- 读取 product_scale_CetisPV.csv（含温度系数）
-- 模拟 Singapore / Dubai / Berlin / Sydney 四个气候区
-- 各气候区用典型月均温度和 PSH 数据
-- 蒙特卡洛模拟: 对 irradiance 和 temperature 加随机噪声（±10%），跑 1000 次
-- 计算年发电量的均值和 95% 置信区间
-- 生成 Figure: 4 城市 × 6 模块（4×EG-PF + baseline + SERIS）的年发电量对比
-- 生成 Figure: 月度发电量曲线（Singapore）
-
-### Section 5.6: Hotspot risk Monte Carlo simulation
+### Section 5.5: Hotspot risk Monte Carlo simulation
 需要新脚本：`scripts/08_hotspot_simulation.py`
 
 任务：
@@ -87,7 +75,7 @@ and experimental validation for coloured photovoltaic facades"
 - 生成 Figure: cell-level irradiance distribution (algorithm vs full-print)
 - 生成 Figure: hotspot probability histogram
 
-### Section 5.7: Product-scale validation
+### Section 5.6: Product-scale validation
 需要新脚本：`scripts/09_product_validation.py`
 
 任务：
@@ -107,7 +95,7 @@ and experimental validation for coloured photovoltaic facades"
 - Fig4_multi_descriptor_correlation.png
 - Fig5_loss_decomposition.png
 - Fig6_shading_model.png
-- Fig7_temperature_yield_4cities.png
+- Fig7_Isc_shading_model.png  (from script 01, shading model)
 - Fig8_hotspot_simulation.png
 - Fig9_product_validation.png
 - Fig10_pv_art_applications.jpg (手动拼图)
