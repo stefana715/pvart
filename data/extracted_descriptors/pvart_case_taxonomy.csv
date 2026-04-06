@@ -1,0 +1,28 @@
+filename,Name,Category,PV_technology,Coloring_method,Scale,Hotspot_addressed,Image_customizable
+40_07.jpg,CetisPV Heritage,facade,c-Si,printed,large,yes,yes
+45_nk020.jpg,Onyx Solar facade,facade,thin_film,structural_color,large,no,no
+49_group-3-0.jpg,Solaxess facade panel,facade,c-Si,colored_glass,medium,no,no
+800px-Mullberg.jpg,Mullberg chapel BIPV,facade,c-Si,no_color,medium,no,no
+art_solarsail01.jpg,Solar Sail sculpture,sculpture,c-Si,structural_color,small,no,no
+art_solarsail03.jpg,Solar Sail detail,sculpture,c-Si,structural_color,small,no,no
+coloured-solar-panels-500x500.webp,Coloured panel array,ground_installation,c-Si,colored_glass,medium,no,no
+LoopPh-Sonumbra-03.jpg,Sonumbra (Loop.pH),public_art,OPV,no_color,small,unknown,no
+pv_system.png,Generic PV system,ground_installation,c-Si,no_color,large,no,no
+pvart_case_art_01.png,PV art installation A,public_art,c-Si,printed,small,unknown,yes
+pvart_case_art_02.png,PV art installation B,public_art,c-Si,printed,small,unknown,yes
+pvart_case_art_03.png,PV art installation C,public_art,c-Si,structural_color,small,unknown,no
+pvart_case_building.png,BIPV office building,facade,c-Si,colored_glass,large,no,no
+pvart_case_canopy_render.png,PV canopy render,canopy,c-Si,colored_glass,medium,no,no
+pvart_case_colored_panels.jpg,Coloured panel mosaic,facade,c-Si,colored_glass,medium,no,no
+pvart_case_facade_01.png,Patterned facade BIPV,facade,c-Si,printed,large,yes,yes
+pvart_case_facade_02.png,BIPV facade gradient,facade,c-Si,structural_color,large,no,no
+pvart_case_installation_01.png,PV ground installation,ground_installation,c-Si,printed,medium,unknown,yes
+pvart_case_park.png,Park PV canopy,canopy,c-Si,no_color,large,no,no
+pvart_case_sculpture.png,PV sculpture landmark,sculpture,c-Si,structural_color,small,no,no
+Sarah_Hall_grassvalley1.jpg,Sarah Hall – Grass Valley,window,c-Si,mixed,medium,unknown,yes
+Sarah_Hall_regent1.jpg,Sarah Hall – Regent,window,c-Si,mixed,medium,unknown,yes
+solar-gate2.jpg,Solar Gate public art,public_art,c-Si,printed,medium,unknown,yes
+SW11.jpg,Dot-pattern lab M-11,facade,c-Si,printed,small,yes,yes
+SW13.jpg,Dot-pattern lab M-13,facade,c-Si,printed,small,yes,yes
+zadar_suncanik1.jpg,Zadar Sun Organ 1,public_art,c-Si,no_color,small,no,no
+zadar_suncanik2.jpg,Zadar Sun Organ 2,public_art,c-Si,no_color,small,no,no

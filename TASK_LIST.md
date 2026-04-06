@@ -7,6 +7,10 @@
 "From visual pattern to electrical performance: image-derived descriptors 
 and experimental validation for coloured photovoltaic facades"
 
+## 目标期刊
+- 首选：Applied Energy (Elsevier, Q1) — 强调 practical relevance，适合含应用场景分析的路线
+- 备选：Renewable Energy (Elsevier, Q1)
+
 ## 论文结构 → 代码对应关系
 
 论文共需要以下计算和图表，请按顺序执行：
@@ -98,7 +102,14 @@ and experimental validation for coloured photovoltaic facades"
 - Fig7_Isc_shading_model.png  (from script 01, shading model)
 - Fig8_hotspot_simulation.png
 - Fig9_product_validation.png
-- Fig10_pv_art_applications.jpg (手动拼图)
+- Fig10_pvart_taxonomy.png        (script 10: stacked bar, 27 cases × category × coloring method)
+- Fig11_gap_analysis.png          (script 11: bubble chart, efficiency retention vs customisability)
+
+### Section 6.2: PV Art as an emerging application paradigm
+全文见 docs/Section_6_2_PVArt_Discussion.md
+- 27案例分类分析（taxonomy）
+- 三角空白论证（triple sweet spot）
+- 从"装饰性牺牲"到"功能性艺术"的重新定性
 
 ## 执行方式
 
