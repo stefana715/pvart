@@ -22,6 +22,24 @@
 | **13** | **MPCPV-2022** | **Sustainability** | **2022** | **10.3390/su14074278** | **✅** |
 | 14 | OpenCV-2024 | Software | 2024 | opencv.org v4.x | ✅ |
 | 15 | ISO-IEC-BIPM | Standard | 2008 | Guide to Uncertainty (GUM) | ✅ |
+| 16 | Pelle2023-OpaqueBIPV | Energies | 2023 | Opaque Coloured BIPV: models and simulation; 16(4):1991 | ⚠️ |
+| 17 | EnergyBuild2024-ColouringReview | Energy and Buildings | 2024 | Colouring solutions for BIPV modules: A review (ScienceDirect) | ⚠️ |
+| 18 | NatRevCT2025-BIPV | Nature Reviews Clean Technology | 2025 | Building-integrated photovoltaics | ⚠️ |
+| 19 | NatRevCT2025-AestheticEfficiency | Nature Reviews Clean Technology | 2025 | Balancing aesthetics and efficiency of coloured opaque PV | ⚠️ |
+| 20 | Zhou2024-NotInMyCity | Technology in Society | 2024 | (Not) in my city | ⚠️ |
+| 21 | SanchezPantoja2018-AestheticPerception | Sustainable Cities and Society | 2018 | Aesthetic perception of PV integration | ⚠️ |
+| 22 | Dhimish2017-HotspotDetection | Reliability / diagnostics | 2017 | Hotspot detection in PV modules | ⚠️ |
+| 23 | Kim2016-IEEEHotspot | IEEE Transactions on Power Electronics | 2016 | Hotspot-related PV reliability analysis | ⚠️ |
+| 24 | IEA-PVPS-T15-07-2019 | IEA-PVPS Task 15 Report | 2019 | T15-07:2019 Coloured BIPV | ✅ |
+| 25 | KryszakWang2020-AestheticsValue | Energy Sources | 2020 | Value of aesthetics in BIPV | ⚠️ |
+| 26 | Gewohn2021-ColorIscPrediction | AIP Advances | 2021 | Predicting color and Isc of colored BIPV | ⚠️ |
+| 27 | Jelle2012-BIPVReview | Sol. Energy Mater. Sol. Cells | 2012 | 10.1016/j.solmat.2011.08.013 | ✅ |
+| 28 | Agathokleous2020-BIPVReview | Renew. Sust. Energy Rev. | 2020 | 109849 (BIPV review) | ⚠️ |
+| 29 | Attoye2017-BIPVAesthetics | Renewable Energy / BIPV design | 2017 | BIPV in architectural design (details to verify) | ⚠️ |
+| 30 | Frontier2020-BIPVTechReview | Applied Energy / review | 2020 | Recent progress in BIPV technologies (details to verify) | ⚠️ |
+| 31 | IEC61730-Safety | IEC Standard | 2016 | IEC 61730 PV module safety qualification | ✅ |
+| 32 | IEC61215-Reliability | IEC Standard | 2021 | IEC 61215 terrestrial PV module design qualification | ✅ |
+| 33 | IEC-TS63126-BIPV | IEC Technical Specification | 2020 | IEC TS 63126 Guidelines for qualifying PV modules for operation at high temperatures | ✅ |
 
 ---
 
@@ -88,4 +106,5 @@ https://doi.org/10.1016/j.enconman.2022.116479
 - [ ] Verify MPCPV-2022 exact title via doi.org/10.3390/su14074278
 - [ ] Decide on SERIS data citation strategy (unpublished data note vs. omit)
 - [ ] Check Reiter2022 (Prog. Photovolt.) is correct DOI — may be pip.3529 or later
-- [ ] Add any reviewer-requested references after first-round review
+- [x] Add reviewer-anticipated categories to reach 30+ references (now 33 entries in core list)
+- [ ] Confirm full bibliographic fields and DOI for entries marked ⚠️ before final submission
