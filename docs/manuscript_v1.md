@@ -7,7 +7,7 @@
 
 ## Abstract
 
-Coloured building-integrated photovoltaics (BIPV) face an unresolved trilemma: achieving image-customisable visual patterns while maintaining high electrical performance and suppressing hotspot risk. This paper proposes a six-descriptor image-derived framework — Colour Coverage Ratio (CCR), Effective Aperture Ratio (EAR), Spatial Frequency (SF), Edge Density (ED), Dot Size Variance (DSV), and Pattern Uniformity Index (PUI) — that quantifies the optical geometry of dot-pattern coloured PV modules and links it directly to measurable electrical performance. Ten laboratory-scale specimens (SERIS, Singapore) spanning CCR = 0–100% were characterised under standard test conditions. A linear regression of CCR against STC efficiency yields η = −0.1503·CCR + 16.908 (R² = 0.9957), confirming photocurrent loss as the dominant mechanism (105% of total efficiency loss attributable to ΔIsc/Isc). Critically, five modules sharing identical CCR = 26.48% exhibit an efficiency spread of 5.47 percentage points, explained by secondary descriptors: Edge Density shows the strongest correlation with efficiency loss (r = 0.995), revealing the role of dot perimeter geometry in modulating sub-cell light diffraction. An effective shading model, Isc = Isc₀ × (1 − α·CCR), yields α = 0.796 ± 0.093 for dot-pattern modules — significantly below unity, indicating that approximately 20% of light blocked by each dot reaches the active junction via edge diffraction. A per-cell uniformity constraint embedded in the dot-pattern algorithm reduces current mismatch from 12.2% (free image print) to 1.0% (algorithm pattern) in Monte Carlo simulation, eliminating hotspot risk entirely. Product-scale validation on three commercially manufactured 2.01 m² modules (CetisPV) confirms efficiency retention of 76.5–87.2% and relative efficiency loss of 27.56–27.70%, substantially lower than comparable printed approaches. The proposed framework provides architects and engineers with quantitative design guidelines linking visual pattern choices to expected electrical performance, advancing coloured BIPV from decorative compromise to functional art.
+Coloured building-integrated photovoltaics (BIPV) face an unresolved trilemma: achieving image-customisable visual patterns while maintaining high electrical performance and suppressing hotspot risk. This paper proposes a six-descriptor image-derived characterisation approach — Colour Coverage Ratio (CCR), Effective Aperture Ratio (EAR), Spatial Frequency (SF), Edge Density (ED), Dot Size Variance (DSV), and Pattern Uniformity Index (PUI) — that quantifies the optical geometry of dot-pattern coloured PV modules and links it directly to measurable electrical performance. Ten laboratory-scale specimens (SERIS, Singapore) spanning CCR = 0–100% were characterised under standard test conditions. A linear regression of CCR against STC efficiency yields η = −0.1503·CCR + 16.908 (R² = 0.9957), indicating photocurrent loss as the dominant mechanism (105% of total efficiency loss attributable to ΔIsc/Isc). Critically, five modules sharing identical CCR = 26.48% exhibit an efficiency spread of 5.47 percentage points, explained by secondary descriptors: Edge Density shows a monotonic positive relationship with efficiency across the three pattern families tested, revealing the role of dot perimeter geometry in modulating sub-cell light diffraction. An effective shading model, Isc = Isc₀ × (1 − α·CCR), yields α = 0.796 ± 0.093 for dot-pattern modules — significantly below unity, indicating that approximately 20% of light blocked by each dot reaches the active junction via edge diffraction. A per-cell uniformity constraint embedded in the dot-pattern algorithm reduces current mismatch from 12.2% (free image print) to 1.0% (algorithm pattern) in Monte Carlo simulation, designed to minimise hotspot risk. Experimental characterisation at both lab and product scale on three commercially manufactured 2.01 m² modules (CetisPV) indicates efficiency retention of 76.5–87.2% and relative efficiency loss of 27.56–27.70%, substantially lower than comparable printed approaches. The proposed characterisation approach provides architects and engineers with quantitative design guidelines linking visual pattern choices to expected electrical performance, advancing coloured BIPV from decorative compromise to "functional photovoltaic art".
 
 **Keywords:** coloured BIPV; dot-pattern photovoltaics; image descriptor; effective shading coefficient; hotspot; PV art; building-integrated photovoltaics
 
@@ -23,7 +23,7 @@ The integration of photovoltaic modules into building envelopes — building-int
 
 The optical mechanisms for colouring silicon PV modules fall into three broad families. *Spectrally selective coatings* — including thin-film interference stacks and photonic crystal arrays — reflect specific wavelengths while transmitting photovoltaically useful light [6, 7]. They achieve efficiency retentions of 80–95% relative to uncoloured references [7] but are restricted to uniform, image-independent colour fields. *Inkjet-printed pigment layers* achieve near-photographic image fidelity but absorb or scatter a broad spectral range indiscriminately; full-coverage configurations exhibit efficiency losses of 56–88% [8, 9]. *Sub-cell patterning* — in which discrete light-blocking elements whose local density encodes image content are applied to the module surface — has received increasing attention as a strategy that might bridge the gap between image customisability and acceptable electrical performance.
 
-The most directly comparable prior work is that of Peng et al. [12], who fabricated dot-matrix patterned modules using screen-printed opaque dots at three coverage levels (10%, 20%, and 30%) and characterised their electrical and thermal performance under standard test conditions. Their results confirm a near-linear relationship between colour coverage ratio (CCR) and efficiency loss, consistent with a photocurrent-dominated mechanism. The present study builds on this foundation in three respects: (i) it introduces a six-descriptor image analysis framework extending beyond CCR alone; (ii) it enforces a per-cell uniformity constraint in the pattern generation algorithm, suppressing current mismatch from 12.2% to 1.0%; and (iii) it provides a complete lab-to-product validation chain on commercially manufactured full-size modules — none of which was reported in [12].
+The most directly comparable prior work is that of Peng et al. [12], who fabricated dot-matrix patterned modules using screen-printed opaque dots at three coverage levels (10%, 20%, and 30%) and characterised their electrical and thermal performance under standard test conditions. Their results indicate a near-linear relationship between colour coverage ratio (CCR) and efficiency loss, consistent with a photocurrent-dominated mechanism. The present study builds on this foundation in three respects: (i) it introduces a six-descriptor image analysis characterisation approach extending beyond CCR alone; (ii) it enforces a per-cell uniformity constraint in the pattern generation algorithm, suppressing current mismatch from 12.2% to 1.0%; and (iii) it provides experimental validation at two scales on commercially manufactured full-size modules — none of which was reported in [12].
 
 A further benchmark is provided by the micro-pattern coloured PV (MPCPV) approach of [13], which achieved an STC efficiency of 9.6% at approximately 40% coverage using photolithographic micro-patterns, corresponding to an efficiency retention of approximately 58%. The present method achieves 76.5–87.2% retention at comparable coverage, representing a relative improvement of 31–50 percentage points.
 
@@ -31,21 +31,21 @@ A further benchmark is provided by the micro-pattern coloured PV (MPCPV) approac
 
 Three specific gaps motivate this work:
 
-**Gap 1 — Descriptor-based performance prediction.** Existing studies, including Peng et al. [12], characterise patterned modules by CCR alone. No published framework links pattern geometry descriptors — spatial frequency, edge density, dot size variance, pattern uniformity index — to electrical performance, preventing rational design optimisation.
+**Gap 1 — Descriptor-based performance prediction.** Existing studies, including Peng et al. [12], characterise patterned modules by CCR alone. No published characterisation approach links pattern geometry descriptors — spatial frequency, edge density, dot size variance, pattern uniformity index — to electrical performance, preventing rational design optimisation.
 
 **Gap 2 — Per-cell uniformity as a design constraint.** The hotspot risk inherent in spatially heterogeneous image-derived patterns has not been systematically quantified or mitigated in prior dot-matrix work. No prior study has demonstrated the design rule required to suppress current mismatch in image-customisable patterned modules.
 
 **Gap 3 — Lab-to-product validation.** No prior study has validated image-customisable dot-pattern performance from laboratory specimens through to commercially manufactured full-size BIPV modules.
 
-The objectives of this paper are: (i) to define and extract a six-descriptor framework applicable to any dot-pattern image; (ii) to quantify descriptor–performance relationships through single- and multi-descriptor regression; (iii) to establish an effective shading coefficient model that captures sub-unity optical transmission through dot patterns; (iv) to assess and demonstrate hotspot suppression via Monte Carlo simulation; and (v) to validate the complete framework at product scale.
+The objectives of this paper are: (i) to define and extract a six-descriptor characterisation approach applicable to any dot-pattern image; (ii) to quantify descriptor–performance relationships through single- and multi-descriptor regression; (iii) to establish an effective shading coefficient model that captures sub-unity optical transmission through dot patterns; (iv) to assess and indicate hotspot suppression via Monte Carlo simulation; and (v) to evaluate this first step toward a descriptor-based characterisation approach at product scale.
 
 ---
 
-## 2. Image-Derived Descriptor Framework
+## 2. Image-Derived Descriptor Characterisation Approach
 
 ### 2.1 Motivation for a multi-descriptor approach
 
-A dot-pattern coloured PV module is characterised not only by the fraction of its surface covered by light-blocking elements, but also by the spatial organisation of those elements: how many dots are present, how large they are, how uniformly their size varies, and how regular their spatial distribution is across the module. These geometric properties collectively determine the optical path of light reaching the active cells beneath the pattern — particularly through edge diffraction at dot boundaries — and hence influence short-circuit current independently of CCR. A single scalar (CCR) is insufficient to predict performance in the general case.
+A dot-pattern coloured PV module is characterised not only by the fraction of its surface covered by light-blocking elements, but also by the spatial organisation of those elements: how many dots are present, how large they are, how uniformly their size varies, and how regular their spatial distribution is across the module. These geometric properties collectively determine the optical path of light reaching the active cells beneath the pattern — particularly through edge diffraction at dot boundaries — and hence influence short-circuit current independently of CCR. A single scalar (CCR) is insufficient to characterise and help explain electrical performance in the general case.
 
 ### 2.2 Descriptor definitions
 
@@ -143,19 +143,19 @@ Figure 3 shows the relationship between CCR and STC efficiency for all ten speci
 
 > η = −0.1503 · CCR + 16.908, R² = 0.9957, RMSE = 0.37%
 
-The near-unity coefficient of determination confirms that CCR is an excellent first-order predictor of efficiency loss within a single image family: every 10 percentage-point increase in CCR incurs approximately 1.50 percentage points of absolute efficiency loss. A quadratic model (η = −5.0 × 10⁻⁵ · CCR² − 0.1453 · CCR + 16.852, R² = 0.9958) provides marginally better fit but offers no practical improvement given experimental uncertainty.
+The near-unity coefficient of determination indicates that CCR is an excellent first-order predictor of efficiency loss within a single image family: every 10 percentage-point increase in CCR incurs approximately 1.50 percentage points of absolute efficiency loss. A quadratic model (η = −5.0 × 10⁻⁵ · CCR² − 0.1453 · CCR + 16.852, R² = 0.9958) provides marginally better fit but offers no practical improvement given experimental uncertainty.
 
-This result is consistent with the findings of ECM-2022 [12] and confirms the photocurrent-dominated nature of coverage-induced losses. The regression is not claimed as a novel finding; rather, it establishes the baseline against which the secondary descriptor effects (Section 5.2) are measured, and its exceptionally high R² validates the quality and internal consistency of the laboratory data.
+This result is consistent with the findings of ECM-2022 [12] and indicates the photocurrent-dominated nature of coverage-induced losses. The regression is not claimed as a novel finding; rather, it establishes the baseline against which the secondary descriptor effects (Section 5.2) are measured, and its exceptionally high R² supports the quality and internal consistency of the laboratory data.
 
 The coloured-glass module (M-5C) falls 1.55 percentage points below the dot-pattern regression line at the same CCR (η = 11.98% vs. predicted 12.90%), and the full-print module (M-7) falls below the line by 0.50 percentage points. These deviations are addressed mechanistically in Section 5.4.
 
 ### 5.2 Multi-descriptor analysis: secondary descriptors explain same-CCR performance spread
 
-The most consequential finding in the dataset is that modules M-1, M-2, M-4, M-6, and M-9 — all fabricated at identical CCR = 26.48% — exhibit STC efficiencies of 12.73–13.64%, a spread of 0.91 percentage points in absolute terms. This inter-module spread of 5.47 percentage points in *efficiency loss* (18.0–23.5%) cannot be explained by CCR and directly motivates the multi-descriptor framework.
+The most consequential finding in the dataset is that modules M-1, M-2, M-4, M-6, and M-9 — all fabricated at identical CCR = 26.48% — exhibit STC efficiencies of 12.73–13.64%, a spread of 0.91 percentage points in absolute terms. This inter-module spread of 5.47 percentage points in *efficiency loss* (18.0–23.5%) cannot be explained by CCR and directly motivates this first-step multi-descriptor characterisation approach.
 
 Table 3 presents the image descriptors extracted from the three primary pattern families across energy-oriented and graphic-oriented modes (Figure 4 panel a). Pearson correlation coefficients between descriptor values and efficiency loss across the three primary patterns reveal the following ranking:
 
-- **Edge Density (ED):** r = 0.995 — strongest predictor
+- **Edge Density (ED):** shows a monotonic positive relationship with efficiency across the three pattern families tested
 - **Spatial Frequency (SF):** r = 0.824
 - **CCR:** r = 0.795
 - **PUI:** r = −0.693 (negative: higher uniformity → lower loss)
@@ -166,6 +166,8 @@ The dominance of ED over CCR in predicting efficiency loss is physically interpr
 
 This finding extends the analysis of [12] in a practically important direction: not only does CCR determine first-order efficiency, but ED and SF — which are controlled independently of CCR through dot size and count — offer designers a second-order lever for optimising performance at a fixed visual coverage level. For a target CCR of 26.48%, shifting from a few large dots (low SF, low ED) to many small dots (high SF, high ED) is predicted to recover approximately 1.5 percentage points of absolute efficiency with no change in visual coverage density.
 
+We note that the descriptor-performance relationships presented here are derived from three primary pattern families. While the monotonic trends are physically interpretable (higher ED -> more edge diffraction -> greater light transmission), the small sample size precludes robust statistical inference. Future work should systematically vary pattern geometry across a larger design space to establish statistically validated predictive models. The present results are therefore presented as indicative correlations that motivate further investigation rather than definitive quantitative relationships.
+
 ### 5.3 Optical loss decomposition: photocurrent dominates
 
 Figure 5 presents the optical loss decomposition for all nine non-baseline specimens, partitioned into ΔIsc/Isc₀, ΔVoc/Voc₀, and ΔFF/FF₀ contributions.
@@ -175,11 +177,11 @@ For the six dot-pattern modules (M-1, M-2, M-3, M-4, M-6, M-9), the mean loss co
 - Voc loss: 0.9% (range: 0.2–1.4%)
 - FF change: −2.1% (range: −4.1 to −0.9%; negative = improvement)
 
-Isc loss accounts for approximately 105% of the total efficiency loss (mean loss decomposition attributable fraction), confirming that the dominant mechanism is a reduction in photogenerated current caused by the partial shading of the active junction by dot-pattern elements. The Voc loss of < 1.4% is consistent with the logarithmic dependence of open-circuit voltage on short-circuit current: a 20% reduction in Isc produces only approximately 2–3% Voc reduction at room temperature. The slight fill factor improvement (negative FF change) observed in several modules is attributed to a reduction in series resistance losses at lower operating currents, partially offsetting the Isc-driven efficiency penalty.
+Isc loss accounts for approximately 105% of the total efficiency loss (mean loss decomposition attributable fraction), indicating that the dominant mechanism is a reduction in photogenerated current caused by the partial shading of the active junction by dot-pattern elements. The Voc loss of < 1.4% is consistent with the logarithmic dependence of open-circuit voltage on short-circuit current: a 20% reduction in Isc produces only approximately 2–3% Voc reduction at room temperature. The slight fill factor improvement (negative FF change) observed in several modules is attributed to a reduction in series resistance losses at lower operating currents, partially offsetting the Isc-driven efficiency penalty.
 
 The coloured-glass module (M-5C) shows markedly higher Isc loss (28.8%) than any dot-pattern module at the same CCR, despite identical nominal coverage. This is consistent with an effective shading coefficient α > 1 for uniform glass overlays (Section 5.4), indicating that the glass absorbs or scatters a portion of obliquely incident light that would have reached the junction even with zero patterning.
 
-Full-print (M-7) and large-dot (M-8) modules exhibit Isc losses of 88.6% and 58.1% respectively, at CCR = 100% and 61.51%, confirming the approximately linear scaling of Isc loss with CCR predicted by the shading model.
+Full-print (M-7) and large-dot (M-8) modules exhibit Isc losses of 88.6% and 58.1% respectively, at CCR = 100% and 61.51%, indicating the approximately linear scaling of Isc loss with CCR predicted by the shading model.
 
 ### 5.4 Effective shading model and the sub-unity dot aperture coefficient
 
@@ -190,7 +192,7 @@ relates the short-circuit current to the uncoloured baseline Isc₀ = 8.05 A thr
 
 The effective shading coefficients determined from individual module measurements are reported in Table 4. For the six dot-pattern modules, the fitted values span α = 0.676 to 0.905, with a mean of α = 0.796 and standard deviation of 0.093. This result — α significantly below unity — is a key finding of the study. It indicates that, on average, approximately 20% of light geometrically blocked by each dot element still reaches the active junction, most probably via diffraction at the dot–aperture boundary and forward scattering within the encapsulant layer beneath the dots. This physical effect is what makes dot-pattern modules systematically more light-efficient than geometrically equivalent uniform opaque coatings.
 
-By contrast, the coloured-glass module (M-5C) yields α = 1.088, confirming that uniform glass overlays are *more* optically lossy than the geometric shading fraction predicts — consistent with parasitic absorption and scattering in the coloured glass layer beyond the CCR contribution.
+By contrast, the coloured-glass module (M-5C) yields α = 1.088, indicating that uniform glass overlays are *more* optically lossy than the geometric shading fraction predicts — consistent with parasitic absorption and scattering in the coloured glass layer beyond the CCR contribution.
 
 The full-print (M-7) and large-dot (M-8) modules yield α = 0.886 and 0.945 respectively, both higher than the dot-pattern mean. This is expected: large-area opaque elements have a higher perimeter-to-area ratio for a single large element than for many small elements at the same CCR only when the boundary diffraction effect is area-normalised, and the dot-pattern case involves a larger total boundary perimeter (high ED), consistent with the correlation reported in Section 5.2.
 
@@ -215,7 +217,9 @@ Results (Figure 8; hotspot_results.json):
 
 The 12-fold reduction in current mismatch from 12.2% to 1.0% directly translates to reduced resistive losses in the cell string and an improvement in module fill factor. The zero hotspot probability in both cases reflects the choice of a relatively low mean CCR (26.48%) and the presence of bypass diodes; at higher CCR values or with images containing near-zero-irradiance regions (very dark image content), the free-print strategy would generate non-zero hotspot probability [REFS].
 
-Crucially, the 1.0% mismatch of the algorithm pattern represents a near-ideal condition attributable entirely to the stochastic placement noise permitted within the ±2% per-cell tolerance. This demonstrates that the per-cell uniformity constraint — enforced in Stage 5 of the algorithm (Section 3.2) — is both necessary and sufficient to reduce hotspot risk from a design-level concern to a negligible residual.
+Crucially, the 1.0% mismatch of the algorithm pattern represents a near-ideal condition attributable entirely to the stochastic placement noise permitted within the ±2% per-cell tolerance. This indicates that the per-cell uniformity constraint — enforced in Stage 5 of the algorithm (Section 3.2) — is an effective way to substantially reduce hotspot risk from a design-level concern to a low residual.
+
+While the Monte Carlo simulation provides a first-order estimate of mismatch risk, experimental validation through infrared thermography and long-term field monitoring is needed to confirm hotspot elimination under real operating conditions.
 
 ### 5.6 Product-scale validation
 
@@ -230,11 +234,11 @@ Figure 9 presents the electrical performance of the three product-scale modules 
 | EG-PF2 | Wavy line | 292.0 | 14.51 | 81.94 | 4.55 | 78.39 | 27.56 | −0.25 |
 | EG-PF3 | Flowing curve | 291.4 | 14.48 | 82.39 | 4.51 | 78.43 | 27.70 | −0.25 |
 
-All three patterned modules achieve efficiency retentions of 72.3–72.4% relative to the product-scale baseline (η_baseline = 20.02%), with relative losses tightly clustered at 27.56–27.70%. The inter-module spread of 0.14 percentage points in relative loss demonstrates excellent manufacturing consistency across three distinct image patterns. Fill factors of 81.79–82.39% are comparable to those of the uncoloured baseline (81.63%), confirming that the series resistance and diode ideality factor are unaffected by the dot-pattern application.
+All three patterned modules achieve efficiency retentions of 72.3–72.4% relative to the product-scale baseline (η_baseline = 20.02%), with relative losses tightly clustered at 27.56–27.70%. The inter-module spread of 0.14 percentage points in relative loss indicates strong manufacturing consistency across three distinct image patterns. Fill factors of 81.79–82.39% are comparable to those of the uncoloured baseline (81.63%), indicating that the series resistance and diode ideality factor are unaffected by the dot-pattern application.
 
-The temperature power coefficient TkP = TkI + TkU ranges from −0.23 to −0.25 %/°C for the three patterned modules, compared with −0.24 %/°C for the baseline. This is 31–34% lower in absolute magnitude than the −0.35 %/°C typical of conventional non-bifacial crystalline silicon modules under field conditions, an improvement attributable to the P-TopCon cell technology used rather than to the dot pattern itself. The consistency of TkP across patterned and baseline modules confirms that the coloured glass overlay does not introduce additional temperature sensitivity.
+The temperature power coefficient TkP = TkI + TkU ranges from −0.23 to −0.25 %/°C for the three patterned modules, compared with −0.24 %/°C for the baseline. This may indicate different thermal behaviour compared to standard modules, though dedicated outdoor thermal characterisation is required to confirm this preliminary observation. The consistency of TkP across patterned and baseline modules indicates that the coloured glass overlay does not introduce additional temperature sensitivity within the present dataset.
 
-Comparison with the SERIS multicolour reference (η = 10.00%, relative loss = 43.0%) places the product-scale performance of the CetisPV modules in context: the algorithm-patterned modules achieve 45–46% lower relative efficiency loss than the multicolour reference at comparable visual colouring intent. Comparison with the MPCPV approach [13] (η = 9.6%, retention ~58%) confirms a 31–50 percentage-point advantage in efficiency retention for the proposed method.
+Comparison with the SERIS multicolour reference (η = 10.00%, relative loss = 43.0%) places the product-scale performance of the CetisPV modules in context: the algorithm-patterned modules achieve 45–46% lower relative efficiency loss than the multicolour reference at comparable visual colouring intent. Comparison with the MPCPV approach [13] (η = 9.6%, retention ~58%) indicates a 31–50 percentage-point advantage in efficiency retention for the proposed method.
 
 ---
 
@@ -250,7 +254,7 @@ The experimental results presented in Sections 5.1–5.6 support the following p
 
 **Guideline 3 — Require PUI < 5% in algorithm output verification for hotspot safety.** The Monte Carlo simulation shows that PUI → 0 (algorithm pattern) reduces current mismatch to 1.0% and eliminates hotspot probability. Patterns failing the PUI < 5% gate check (Stage 7 of the algorithm) should be redesigned before fabrication.
 
-**Guideline 4 — Treat α < 1 as a quality indicator for dot-pattern modules.** An effective shading coefficient α > 1 (as observed for coloured-glass overlays, M-5C) indicates that the colouring method introduces parasitic optical losses beyond geometric shadowing. Specification documents should require α < 0.85 for dot-pattern modules to confirm that edge-diffraction benefits are being realised.
+**Guideline 4 — Treat α < 1 as a quality indicator for dot-pattern modules.** An effective shading coefficient α > 1 (as observed for coloured-glass overlays, M-5C) indicates that the colouring method introduces parasitic optical losses beyond geometric shadowing. Specification documents should require α < 0.85 for dot-pattern modules to indicate that edge-diffraction benefits are being realised.
 
 **Guideline 5 — Plan for ±0.5% real-world CCR variation and its efficiency implications.** Manufacturing variability in ink density, curing, and glass transmission will introduce module-to-module CCR spread. The slope of the regression (−0.150 %/CCR%) implies that a ±2% CCR variation around the nominal target will produce ±0.3 percentage points of absolute efficiency variation — acceptable for most BIPV applications.
 
@@ -260,19 +264,19 @@ The performance data presented in this paper are particularly relevant to the em
 
 The taxonomy reveals a field dominated by façade applications (10/27, 37%) and public art installations (7/27, 26%). Crucially, only 4 of 27 cases (15%) explicitly addressed hotspot formation, and only 10 of 27 (37%) offered image customisability. These statistics expose a structural gap: the demand for image-customisable, hotspot-safe, and energy-efficient coloured PV is unmet by any single existing approach.
 
-The technology gap analysis in Figure 11 positions each coloured-PV strategy in a two-dimensional design space defined by image customisability (x-axis) and efficiency retention (y-axis), with bubble size encoding whether hotspot risk is explicitly addressed. Three clusters are apparent: (i) high efficiency / low customisability (structural colour, coloured glass); (ii) high customisability / low efficiency (full-colour print, MPCPV); and (iii) the upper-right 'triple sweet spot' — high customisability AND high efficiency AND hotspot-safe — occupied exclusively by the proposed dot-pattern algorithm.
+The technology gap analysis in Figure 11 positions each coloured-PV strategy in a two-dimensional design space defined by image customisability (x-axis) and efficiency retention (y-axis), with bubble size encoding whether hotspot risk is explicitly addressed. Three clusters are apparent: (i) high efficiency / low customisability (structural colour, coloured glass); (ii) high customisability / low efficiency (full-colour print, MPCPV); and (iii) an upper-right region representing a combination of attributes not simultaneously achieved by existing approaches in our survey.
 
-This result enables a reconceptualisation of PV Art from a trade-off discipline to a design optimisation problem. Prior installations that used full-colour inkjet printing (MPCPV: 9.6% η; full-print: 1.95% η in this dataset) treated efficiency loss as an unavoidable cost of visual ambition. The present work demonstrates that, at CCR = 26.48%, an image-customisable module retaining 72–87% of baseline efficiency is experimentally achievable. At a product scale of 2.01 m² and with a cell technology reaching 25.3% peak cell efficiency, this corresponds to a Pmax range of 292–400 W per module — within the range of standard commercial BIPV products.
+This result enables a reconceptualisation of PV Art from a trade-off discipline to a design optimisation problem. Prior installations that used full-colour inkjet printing (MPCPV: 9.6% η; full-print: 1.95% η in this dataset) treated efficiency loss as an unavoidable cost of visual ambition. The present work indicates that, at CCR = 26.48%, an image-customisable module retaining 72–87% of baseline efficiency is experimentally achievable. At a product scale of 2.01 m² and with a cell technology reaching 25.3% peak cell efficiency, this corresponds to a Pmax range of 292–400 W per module — within a range reported for standard commercial BIPV products.
 
-The product-scale temperature coefficient improvement (TkP ≈ −0.24 %/°C vs. −0.35 %/°C for non-bifacial c-Si) further benefits tropical and subtropical climates where PV art installations are increasingly prominent (Singapore, Dubai, tropical East Asia). The 31% reduction in temperature sensitivity translates to approximately 3–4% higher energy yield on hot summer afternoons relative to a standard module at the same rated power.
+The product-scale temperature coefficient results (TkP ≈ −0.24 %/°C vs. −0.35 %/°C for non-bifacial c-Si) may indicate different thermal behaviour compared to standard modules, though dedicated outdoor thermal characterisation is required to confirm this preliminary observation.
 
-The emerging regulatory landscape supports the adoption of high-performance coloured BIPV for public art. Singapore's Green Mark 2021, the EU EPBD recast, and China's GB/T 29196-2012 all impose minimum performance thresholds for BIPV installations. At 72–87% efficiency retention with demonstrable hotspot safety, the proposed approach satisfies these thresholds in architecturally ambitious installations without regulatory compromise.
+The emerging regulatory landscape supports the adoption of high-performance coloured BIPV for public art. Singapore's Green Mark 2021, the EU EPBD recast, and China's GB/T 29196-2012 all impose minimum performance thresholds for BIPV installations. At 72–87% efficiency retention with indicated hotspot-risk mitigation, the proposed approach appears compatible with these thresholds in architecturally ambitious installations.
 
 ---
 
 ## 7. Conclusions
 
-This paper has presented an integrated experimental and computational study of dot-pattern coloured photovoltaic modules, introducing a six-descriptor image-derived framework that links pattern geometry to electrical performance and demonstrating its validity from laboratory specimens to commercially manufactured full-size BIPV modules. The principal conclusions are:
+This paper has presented an integrated experimental and computational study of dot-pattern coloured photovoltaic modules, introducing a six-descriptor image-derived characterisation approach that links pattern geometry to electrical performance and indicating its validity from laboratory specimens to commercially manufactured full-size BIPV modules. The principal conclusions are:
 
 1. **CCR is a robust first-order predictor** of dot-pattern module efficiency: η = −0.1503·CCR + 16.908 (R² = 0.9957), with each 10 percentage-point increase in coverage costing 1.50 percentage points of absolute efficiency. Photocurrent loss (ΔIsc/Isc ≈ 105% of total efficiency loss) is the overwhelmingly dominant mechanism; Voc and FF changes are secondary.
 
@@ -280,13 +284,13 @@ This paper has presented an integrated experimental and computational study of d
 
 3. **Dot patterns operate with a sub-unity effective shading coefficient** (α = 0.796 ± 0.093), indicating that approximately 20% of light geometrically blocked by dot elements reaches the active junction via edge diffraction. This gives dot-pattern modules a fundamental optical advantage over uniform opaque coatings (α = 1.088 for coloured glass) at identical CCR.
 
-4. **The per-cell uniformity constraint** enforced by the algorithm reduces current mismatch from 12.2% (free image print) to 1.0% and eliminates hotspot probability in Monte Carlo simulation. PUI → 0 is both a design target and a measurable quality criterion for manufactured modules.
+4. **The per-cell uniformity constraint** enforced by the algorithm reduces current mismatch from 12.2% (free image print) to 1.0% and substantially reduces hotspot probability in Monte Carlo simulation. PUI → 0 is both a design target and a measurable quality criterion for manufactured modules.
 
-5. **Product-scale validation** at CetisPV (EG-PF1–3, area 2.01 m²) confirms efficiency retention of 72.3–72.4% (relative loss 27.56–27.70%) with inter-module spread of only 0.14 pp across three distinct image patterns — 45–46% lower relative loss than a multicolour reference, and 31–50 pp higher retention than the MPCPV benchmark [13].
+5. **Product-scale validation** at CetisPV (EG-PF1–3, area 2.01 m²) is consistent with efficiency retention of 72.3–72.4% (relative loss 27.56–27.70%) with inter-module spread of only 0.14 pp across three distinct image patterns — 45–46% lower relative loss than a multicolour reference, and 31–50 pp higher retention than the MPCPV benchmark [13].
 
-6. **The proposed method occupies a unique position** in the PV art technology landscape: it is the only approach that simultaneously achieves high image customisability, >70% efficiency retention, and zero demonstrated hotspot probability. A taxonomy of 27 global PV art installations confirms that this triple criterion was previously unmet.
+6. **The proposed method is positioned within a region of the design space where** high image customisability, >70% efficiency retention, and low estimated hotspot probability are concurrently achieved. A taxonomy of 27 global PV art installations is consistent with this combination being previously unmet in our survey.
 
-Future work will address the extension of the descriptor framework to colour (as opposed to greyscale) patterns, the characterisation of long-term degradation of coloured glass overlays under UV exposure, and the application of the algorithm to curtain-wall and multi-module façade arrays at scales exceeding 100 m².
+Future work will address the extension of this descriptor-based characterisation approach to colour (as opposed to greyscale) patterns, the characterisation of long-term degradation of coloured glass overlays under UV exposure, and the application of the algorithm to curtain-wall and multi-module façade arrays at scales exceeding 100 m².
 
 ---
 
@@ -354,7 +358,7 @@ Future work will address the extension of the descriptor framework to colour (as
 
 **Fig. 3.** STC efficiency vs. colour coverage ratio (CCR) for all ten laboratory specimens. Linear regression on the same-image series (M-5, M-9, M-8, M-7): η = −0.1503·CCR + 16.908, R² = 0.9957. Source: figures/Fig3_coverage_efficiency_regression.png.
 
-**Fig. 4.** Multi-descriptor correlation analysis. (a) Descriptor values for six pattern configurations (three image families × two algorithm modes). (b) Pearson correlation coefficients between descriptors and efficiency loss. Edge Density is the strongest predictor (r = 0.995). Source: figures/Fig4_multi_descriptor_correlation.png.
+**Fig. 4.** Multi-descriptor correlation analysis. (a) Descriptor values for six pattern configurations (three image families × two algorithm modes). (b) Pearson correlation coefficients between descriptors and efficiency loss. Edge Density shows a monotonic positive relationship with efficiency across the three pattern families tested. Source: figures/Fig4_multi_descriptor_correlation.png.
 
 **Fig. 5.** Optical loss decomposition for all nine non-baseline specimens: photocurrent loss (ΔIsc/Isc), voltage loss (ΔVoc/Voc), and fill factor change (ΔFF/FF). Total relative efficiency loss shown as red diamonds. Source: figures/Fig5_loss_decomposition.png.
 
@@ -368,7 +372,7 @@ Future work will address the extension of the descriptor framework to colour (as
 
 **Fig. 10.** Taxonomy of 27 global PV art installations by application category and colouring method. Source: figures/Fig10_pvart_taxonomy.png.
 
-**Fig. 11.** Technology gap analysis: image customisability vs. efficiency retention for major coloured-PV approaches. Bubble size encodes hotspot risk addressed. The proposed dot-pattern algorithm occupies the unique 'triple sweet spot'. Source: figures/Fig11_gap_analysis.png.
+**Fig. 11.** Technology gap analysis: image customisability vs. efficiency retention for major coloured-PV approaches. Bubble size encodes hotspot risk addressed. The proposed dot-pattern algorithm is positioned in a favourable combination region. Source: figures/Fig11_gap_analysis.png.
 
 ---
 
